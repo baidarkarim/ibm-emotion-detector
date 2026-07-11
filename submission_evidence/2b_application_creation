@@ -1,3 +1,2 @@
-Import OK
-Function OK: True
-requests OK: 2.34.2
++zsh:1> /Users/karimbaidar/Documents/ibm-emotion-detector/.venv/bin/python -c 'from unittest.mock import Mock; import EmotionDetection.emotion_detection as app; app.requests.post = Mock(return_value=Mock(status_code=200, json=lambda: {'\''emotionPredictions'\'': [{'\''emotion'\'': {'\''anger'\'': 0.01, '\''disgust'\'': 0.02, '\''fear'\'': 0.03, '\''joy'\'': 0.90, '\''sadness'\'': 0.04}}]})); from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('\''I love this new technology.'\''))'
+{'anger': 0.01, 'disgust': 0.02, 'fear': 0.03, 'joy': 0.9, 'sadness': 0.04, 'dominant_emotion': 'joy'}

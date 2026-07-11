@@ -1,2 +1,2 @@
-Package import OK
-Imported function: emotion_detector
++zsh:1> /Users/karimbaidar/Documents/ibm-emotion-detector/.venv/bin/python -c 'from unittest.mock import Mock; import EmotionDetection.emotion_detection as app; app.requests.post = Mock(return_value=Mock(status_code=200, json=lambda: {'\''emotionPredictions'\'': [{'\''emotion'\'': {'\''anger'\'': 0.91, '\''disgust'\'': 0.02, '\''fear'\'': 0.03, '\''joy'\'': 0.01, '\''sadness'\'': 0.04}}]})); from EmotionDetection import emotion_detector; from EmotionDetection.emotion_detection import emotion_detector as module_import; print(emotion_detector('\''I am very angry about this.'\''))'
+{'anger': 0.91, 'disgust': 0.02, 'fear': 0.03, 'joy': 0.01, 'sadness': 0.04, 'dominant_emotion': 'anger'}
